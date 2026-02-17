@@ -1,22 +1,27 @@
 {
-  "name": "shopsmart-backend",
+  "name": "nexora-backend",
   "version": "1.0.0",
-  "description": "Backend API for ShopSmart",
+  "description": "Backend API for Nexora",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "test": "jest",
-    "lint": "echo 'No linter configured yet'"
+    "lint": "echo 'No linter configured yet'",
+    "prisma": "prisma",
+    "migrate": "prisma migrate dev --name init",
+    "generate": "prisma generate"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "@prisma/client": "^5.22.0"
   },
   "devDependencies": {
     "jest": "^29.7.0",
     "nodemon": "^3.1.0",
+    "prisma": "^5.22.0",
     "supertest": "^6.3.4"
   }
 }
