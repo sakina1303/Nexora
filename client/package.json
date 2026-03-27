@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "jest",
+    "lint": "eslint src --ext .js,.jsx",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "react": "^18.2.0",
